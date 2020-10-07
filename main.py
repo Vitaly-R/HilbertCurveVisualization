@@ -79,6 +79,7 @@ while run:
         index += 1
 
     pygame.display.flip()
-    clock.tick(frequency)
+    if frequency > 0:
+        clock.tick(frequency)
 
 pygame.quit()
